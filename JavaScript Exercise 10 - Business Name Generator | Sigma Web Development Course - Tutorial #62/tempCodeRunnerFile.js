@@ -1,26 +1,41 @@
+ let rand = Math.random()
+        let first, second, third;
+        // 0 0.33 0.66 1
 
-console.log("Welcome to the Business Name Generator!");
 
-let userInput = prompt("Enter a number (1, 2, or 3):");
-userInput = Number(userInput);
+        // Lets generate the first word
+        if(rand<0.33){
+            first = "Crazy"
+        }
+        else if(rand<0.66 && rand>=0.33){
+            first = "Amazing"
+        }
+        else{
+            first = "Fire"
+        }
 
-let adjectives1 = "Crazy";
-let adjectives2 = "Amazing";
-let adjectives3 = "Fire";
+        // Lets generate the second word
+        rand = Math.random()
+        if(rand<0.33){
+            second = "Engine"
+        }
+        else if(rand<0.66 && rand>=0.33){
+            second = "Foods"
+        }
+        else{
+            second = "Garments"
+        }
 
-let shopNames1 = "Engine";
-let shopNames2 = "Foods";
-let shopNames3 = "Garments";
+        // Lets generate the third word
+        rand = Math.random()
+        if(rand<0.33){
+            third = "Bros"
+        }
+        else if(rand<0.66 && rand>=0.33){
+            third = "Limited"
+        }
+        else{
+            third = "Hub"
+        }
 
-let anotherWords1 = "Limited";
-let anotherWords3 = "Hub";
-
-if (userInput == 1) {
-    console.log("your business name: " + `${adjectives1} ${shopNames1} ${anotherWords1}`);
-}
-else if (userInput == 2) {
-    console.log("your business name: " + `${adjectives2} ${shopNames2} ${anotherWords1}`);
-}
-else if (userInput == 3) {
-    console.log("your business name: " + `${adjectives3} ${shopNames3} ${anotherWords3}`);
-}
+        console.log(`${first} ${second} ${third}`)
