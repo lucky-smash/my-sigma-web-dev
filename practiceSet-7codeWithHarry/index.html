@@ -1,0 +1,197 @@
+<!-- question 1 ::: create a navbar and change the color of its first element to red -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar Without Anchor Tags</title>
+    <style>
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <script>
+        // Change first element color to red
+        document.querySelector("nav ul li").style.color = "red";
+
+        // Add click event
+        document.querySelectorAll("nav ul li").forEach(item => {
+            item.addEventListener("click", () => {
+                alert(`You clicked on ${item.textContent}`);
+            });
+        });
+    </script>
+
+</body>
+</html> -->
+
+<!-- question 2 ::: Create a table without tbody Now use "View page source" 
+ button to check whether it has a tbody or not-->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table without tbody</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+    table {
+      border-collapse: collapse;
+      width: 60%;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 8px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h2>Table created without &lt;tbody&gt;</h2>
+
+  <!-- Table without <tbody> -->
+<!-- <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tr>
+      <td>1</td>
+      <td>Ada</td>
+      <td>Engineer</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Linus</td>
+      <td>Developer</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Grace</td>
+      <td>Designer</td>
+    </tr>
+  </table>
+
+  <p>Now check:</p>
+  <ul>
+    <li>Right-click → <strong>View Page Source</strong> → no &lt;tbody&gt; is written.</li>
+    <li>Right-click → <strong>Inspect</strong> → browser automatically adds &lt;tbody&gt; around the rows.</li>
+  </ul>
+</body>
+</html> -->
+-->
+
+<!-- question 3 ::: Create an element with three children . Now change the color of first and last element to green-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>First & Last Child to Green</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+      }
+      .box {
+        padding: 12px;
+        border: 1px solid #ccc;
+        width: 280px;
+      }
+      .child {
+        padding: 6px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Change first and last child to green (DOM)</h2> -->
+
+    <!-- Parent with 3 children 
+   <div id="parent" class="box">
+      <div class="child">Child 1</div>
+      <div class="child">Child 2</div>
+      <div class="child">Child 3</div>
+    </div>
+
+    <script> -->
+      <!-- // Get the parent
+      //  const parent = document.getElementById("parent");
+
+      // Grab first and last element children (ignores whitespace/text nodes)
+      // const first = parent.firstElementChild;
+      // const last = parent.lastElementChild;
+
+      // Change their color to green -->
+<!-- //       first.style.color = "green";
+//       last.style.color = "green";
+//     </script>
+//   </body>
+// </html>  -->
+
+<!-- question 4 ::: Write a javascript code to change background of all <li> tags to cyan  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change All li Background</title>
+</head>
+<body>
+  <h2>List Example</h2>
+
+  <ul>
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+    <li>Mango</li>
+  </ul>
+
+  <script>
+    // Select all li tags
+    const listItems = document.getElementsByTagName("li"); //we can also use querry selector because in modern practices it is very efficient
+
+    // Loop through and set background color
+    for (let i = 0; i < listItems.length; i++) {
+      listItems[i].style.backgroundColor = "cyan";
+    }
+  </script>
+</body>
+</html> -->
+
+<!-- question 5 ::: Which of the following is. used to look for the farthest ancestor that matches a given CSS selector  -->
+<!-- { a ::: "matches"  }    { b ::: "closest" }    {c ::: "contains" }    {d ::: "none of these" }-->
+
+<!-- answer is none of these  -->
